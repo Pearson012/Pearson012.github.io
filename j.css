@@ -1,0 +1,368 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+.bg{
+  position:fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.allopen{
+  width: 100%;
+  height: 100vh;
+  opacity: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.kontenopen{
+  text-align: center;
+  position: absolute;
+}
+.open{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: white;
+margin-bottom: 30px;
+font-size: 40px;
+}
+.open1{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: white;
+font-size: 15px;
+margin-bottom: 20px;
+}
+.open2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;  
+    font-size: 15px;
+    margin-bottom: 90px;
+}
+.button{
+  text-align: center;
+  border-radius: 35px;
+  background-color: white;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 220px;
+  transition: all 0.7s;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: black;
+}
+.button span{
+    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  color: black;
+  transition: 0.5s;
+}
+.button span:hover{
+  color: white;
+}
+.button span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  color: white;
+  transition: 0.5s;
+}
+.button:hover span {
+    padding-right: 25px;
+  }
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.open4{
+  text-align: center;
+  font-family:cursive;
+color: white;
+margin-bottom: 40px;
+font-size: 25px;
+opacity: 0;
+position: absolute;
+line-height: 1.3;
+}
+.animasi-menghilang{
+  animation: menghilang 2s ease forwards ;
+}
+  @keyframes menghilang {
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+      margin-left: 300px;
+      display: none;
+    }
+  }
+.animasi-muncul{
+animation: muncul 2s ease forwards;
+}
+@keyframes muncul {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    margin-left: 970px;
+  }
+  
+}
+.animasi-typing{
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+  animation: typing 8s steps(120) alternate forwards;
+  animation-delay: 1.7s;
+}
+@keyframes typing{
+  0%{
+    opacity: 1;
+    width: 0;
+  }
+  100%{
+    opacity: 1;
+    width: 100%;
+  }
+}
+.animasi-menghilang1{
+  animation: menghilang1 2s ease forwards ;
+}
+  @keyframes menghilang1 {
+    0%{
+      opacity: 1; 
+      margin: 0;
+    }
+    100%{
+      opacity: 0;
+      margin-left: 280px;
+      display: none;
+    }
+  }
+.button1{
+  position: absolute;
+  margin-top: 500px;
+  text-align: center;
+  border-radius: 35px;
+  background-color: white;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.7s;
+  cursor: pointer;
+  opacity: 0;
+}
+.button1:hover{
+  background-color: black;
+}
+.button1 span{
+    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  color: black;
+  transition: 0.5s;
+}
+.button1 span:hover{
+  color: white;
+}
+.button1 span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  color: white;
+  transition: 0.5s;
+}
+.button1:hover span {
+    padding-right: 25px;
+  }
+  
+.button1:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.bodymemori{
+  background-color: #ffffff00;
+      color: #000000;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      display: none;
+      flex-direction: column;
+      opacity: 0;
+      position: absolute;
+}
+.momen{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  color: #FFFFFF;
+}
+.wrapped {
+  top: 80px;
+  opacity: 1;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.wrapped img {
+  max-width: 70%;
+  height: 130px;
+}
+.animasi-muncul1{
+  animation: muncul1 2s ease forwards;
+  }
+  @keyframes muncul1 {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+      margin-left: 490px;
+    }
+  }
+.animasi-tabel{
+  animation: tabel 3s ease forwards;
+}  
+@keyframes tabel{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    margin-top: 600px;
+    margin-right: 400px;
+  }
+} 
+.animasi-menghilang2{
+  animation: menghilang2 3s ease forwards;
+
+}
+@keyframes menghilang2{
+  0%{
+    opacity: 1;
+    margin-left: 970px;
+  }
+  100%{
+    opacity: 0;
+    margin-left: 970px;
+    margin-top: 300px;
+    display: none;
+  }
+}
+.button2{
+  position: fixed;
+  margin-left: 970px;
+  margin-top: 800px;
+  text-align: center;
+  border-radius: 35px;
+  background-color: white;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.7s;
+  cursor: pointer;
+  opacity: 0;
+}
+.button2:hover{
+  background-color: black;
+}
+.button2 span{
+    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  color: black;
+  transition: 0.5s;
+}
+.button2 span:hover{
+  color: white;
+}
+.button2 span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  color: white;
+  transition: 0.5s;
+}
+.button2:hover span {
+    padding-right: 25px;
+  }
+  
+.button2:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.animasi-muncul2{
+  animation: muncul2 2s ease forwards;
+}
+@keyframes muncul2{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    margin-top: 485px;
+  }
+}
+.animasi-menghilang3{
+  animation: menghilang3 2s ease forwards;
+}
+@keyframes menghilang3{
+  0%{
+    opacity: 1;
+    margin-top: 100px;
+    margin-right: 400px;
+  }
+  100%{
+    opacity: 0;
+    margin-left: 300px;
+  }
+}
+.akhir{
+  font-family:cursive;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  display: n;
+  top: 0;
+  color: white;
+  font-size: 20px;
+}
+.animasi-muncul3{
+  animation: muncul3 2s ease forwards;
+}
+@keyframes muncul3{
+  0%{
+    opacity: 0;
+    top: 0;
+  }
+  100%{
+    opacity: 1;
+    display: inline;
+    margin-top: 80px;
+  }
+}
